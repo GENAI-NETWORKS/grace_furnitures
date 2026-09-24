@@ -154,30 +154,6 @@ function initAnimations() {
     { opacity: 1, y: 0, scale: 1, stagger: 0.1, duration: 0.65, ease: 'back.out(1.4)',
       scrollTrigger: { trigger: '#usp', start: 'top 75%' } });
 
-  /* ── Stats Counter ── */
-  const statNums = document.querySelectorAll('.stat-num[data-target]');
-  statNums.forEach(el => {
-    const target = parseInt(el.dataset.target, 10);
-    const obj = { val: 0 };
-    ScrollTrigger.create({
-      trigger: el,
-      start: 'top 85%',
-      once: true,
-      onEnter: () => {
-        gsap.to(obj, {
-          val: target,
-          duration: 2.2,
-          ease: 'power2.out',
-          onUpdate() { el.textContent = Math.round(obj.val).toLocaleString(); }
-        });
-      }
-    });
-  });
-
-  gsap.fromTo('.stat-item',
-    { opacity: 0, y: 40 },
-    { opacity: 1, y: 0, stagger: 0.12, duration: 0.6, ease: 'power2.out',
-      scrollTrigger: { trigger: '#stats', start: 'top 80%' } });
 
   /* ── Spotlight Section ── */
   gsap.fromTo('.spotlight-hero',
