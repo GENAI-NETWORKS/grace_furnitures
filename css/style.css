@@ -566,14 +566,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 16px;
 }
 
 .cat-card {
   position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
-  aspect-ratio: 3/4;
+  aspect-ratio: 4/5;
   cursor: pointer;
   box-shadow: var(--shadow-md);
   background: var(--espresso-dark);
@@ -1660,7 +1660,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   :root { --section-pad: clamp(40px, 8vw, 80px); }
   .container { width: 92vw; }
   .categories-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .cat-card { aspect-ratio: 2/3; }
+  .cat-card { aspect-ratio: 3/4; }
   .usp-grid { grid-template-columns: repeat(2, 1fr); }
   .usp-item:nth-child(5) { grid-column: 1 / -1; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
