@@ -1675,11 +1675,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero-ctas { flex-direction: column; align-items: flex-start; }
   .spotlight-hero { height: 300px; }
   .spotlight-hero-text { left: 20px; bottom: 24px; }
-  .hero-content { padding: 80px 0 30px; }
+  /* Push all content to the top of the viewport */
+  #hero { align-items: flex-start; }
+  .hero-content { padding: 90px 0 40px; }
   .hero-bg { background-attachment: scroll; }
-  .hero-eyebrow { font-size: 0.68rem; letter-spacing: 0.08em; margin-bottom: 16px; }
-  .hero-headline { margin-bottom: 12px; }
-  .hero-qualities { margin-bottom: 24px; }
+  /* Increase vertical gap between every line */
+  .hero-eyebrow { font-size: 0.68rem; letter-spacing: 0.08em; margin-bottom: 22px; }
+  .hero-headline { margin-bottom: 20px; line-height: 1.12; }
+  .hero-sub { margin-bottom: 20px; font-size: 1rem; }
+  .hero-qualities { margin-bottom: 26px; }
+  .hero-ctas { margin-bottom: 28px; }
   .section-title { font-size: clamp(1.6rem, 5vw, 2.4rem); }
   .business-ctas { flex-direction: column; align-items: flex-start; }
   .business-ctas .btn { justify-content: flex-start; }
