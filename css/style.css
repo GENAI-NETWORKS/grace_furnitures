@@ -1650,8 +1650,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .footer-bottom { flex-direction: column; text-align: center; }
   .contact-form-wrap { padding: 28px 20px; }
   .form-row { grid-template-columns: 1fr; }
-  .hero-trust { flex-direction: column; gap: 10px; }
-  .hero-trust .trust-badge { width: 100%; box-sizing: border-box; }
+  .hero-trust { flex-direction: column; gap: 10px; align-items: flex-start; }
   .business-icon-grid { grid-template-columns: 1fr; }
   .cta-btns { flex-direction: column; align-items: stretch; }
   .hero-ctas { flex-direction: column; }
