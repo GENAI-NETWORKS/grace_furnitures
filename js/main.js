@@ -46,6 +46,7 @@ const hamburger = document.querySelector('.hamburger');
 const mobileDrawer = document.querySelector('.mobile-drawer');
 const drawerOverlay = document.querySelector('.drawer-overlay');
 const drawerLinks = document.querySelectorAll('.drawer-links a');
+const drawerCloseBtn = document.querySelector('#drawer-close-btn');
 
 function openDrawer() {
   hamburger.classList.add('open');
@@ -71,6 +72,7 @@ hamburger?.addEventListener('click', () => {
   mobileDrawer.classList.contains('open') ? closeDrawer() : openDrawer();
 });
 drawerOverlay?.addEventListener('click', closeDrawer);
+drawerCloseBtn?.addEventListener('click', closeDrawer);
 drawerLinks.forEach(link => link.addEventListener('click', closeDrawer));
 
 /* ── Smooth Scroll for Nav Links ── */

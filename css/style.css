@@ -343,7 +343,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   width: 300px;
   max-width: 85vw;
   background: var(--off-black);
-  z-index: 999;
+  z-index: 1002;
   transform: translateX(100%);
   transition: transform var(--transition-slow);
   padding: 100px 32px 40px;
@@ -371,9 +371,28 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.6);
-  z-index: 998;
+  z-index: 1001;
   opacity: 0;
   transition: opacity var(--transition);
+}
+
+.drawer-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition), color var(--transition);
+}
+.drawer-close:hover {
+  background: rgba(166,25,46,0.8);
+  color: var(--white);
 }
 .drawer-overlay.show { opacity: 1; }
 
