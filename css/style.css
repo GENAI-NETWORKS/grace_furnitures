@@ -1669,15 +1669,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .footer-bottom { flex-direction: column; text-align: center; }
   .contact-form-wrap { padding: 28px 20px; }
   .form-row { grid-template-columns: 1fr; }
-  .hero-trust { flex-direction: column; gap: 10px; align-items: flex-start; }
+  .hero-trust { flex-direction: row; flex-wrap: wrap; gap: 12px; }
   .business-icon-grid { grid-template-columns: 1fr; }
   .cta-btns { flex-direction: column; align-items: flex-start; }
   .hero-ctas { flex-direction: column; align-items: flex-start; }
   .spotlight-hero { height: 300px; }
   .spotlight-hero-text { left: 20px; bottom: 24px; }
-  .hero-content { padding: 100px 0 60px; }
+  .hero-content { padding: 80px 0 30px; }
   .hero-bg { background-attachment: scroll; }
-  .hero-eyebrow { font-size: 0.68rem; letter-spacing: 0.08em; }
+  .hero-eyebrow { font-size: 0.68rem; letter-spacing: 0.08em; margin-bottom: 16px; }
+  .hero-headline { margin-bottom: 12px; }
+  .hero-qualities { margin-bottom: 24px; }
   .section-title { font-size: clamp(1.6rem, 5vw, 2.4rem); }
   .business-ctas { flex-direction: column; align-items: flex-start; }
   .business-ctas .btn { justify-content: flex-start; }
