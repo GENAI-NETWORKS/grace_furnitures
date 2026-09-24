@@ -1313,11 +1313,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .form-submit {
-  width: 100%;
-  padding: 16px;
+  padding: 16px 32px;
   font-size: 0.95rem;
   border-radius: var(--radius-sm);
   margin-top: 8px;
+  width: max-content;
 }
 
 .form-success {
@@ -1652,17 +1652,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .form-row { grid-template-columns: 1fr; }
   .hero-trust { flex-direction: column; gap: 10px; align-items: flex-start; }
   .business-icon-grid { grid-template-columns: 1fr; }
-  .cta-btns { flex-direction: column; align-items: stretch; }
-  .hero-ctas { flex-direction: column; }
+  .cta-btns { flex-direction: column; align-items: flex-start; }
+  .hero-ctas { flex-direction: column; align-items: flex-start; }
   .spotlight-hero { height: 300px; }
   .spotlight-hero-text { left: 20px; bottom: 24px; }
   .hero-content { padding: 100px 0 60px; }
   .hero-bg { background-attachment: scroll; }
   .hero-eyebrow { font-size: 0.68rem; letter-spacing: 0.08em; }
   .section-title { font-size: clamp(1.6rem, 5vw, 2.4rem); }
-  .business-ctas { flex-direction: column; }
-  .business-ctas .btn { width: 100%; justify-content: center; }
-  .cta-btns .btn { width: 100%; justify-content: center; }
+  .business-ctas { flex-direction: column; align-items: flex-start; }
+  .business-ctas .btn { justify-content: flex-start; }
+  .cta-btns .btn { justify-content: flex-start; }
   .marquee-track { gap: 16px; }
   .testi-card { min-width: 280px; }
 }
