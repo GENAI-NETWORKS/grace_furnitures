@@ -323,19 +323,26 @@ window.addEventListener('scroll', () => {
 
 /* ── Mobile Touch Hover Fix for Cards ── */
 const catCards = document.querySelectorAll('.cat-card');
-catCards.forEach(card => {
-  card.addEventListener('touchstart', function(e) {
-    if (!this.classList.contains('touch-hover')) {
-      // Remove touch-hover from all others
-      catCards.forEach(c => c.classList.remove('touch-hover'));
-      this.classList.add('touch-hover');
-    }
-  }, { passive: true });
-});
 
-// Click anywhere else to close
-document.addEventListener('touchstart', function(e) {
-  if (!e.target.closest('.cat-card')) {
-    catCards.forEach(c => c.classList.remove('touch-hover'));
-  }
-}, { passive: true });
+// Only apply touch logic on actual touch devices
+if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+  catCards.forEach(card => {
+    card.addEventListener('click', function(e) {
+      // If panel not yet revealed, reveal it and block the link
+      if (!this.classList.contains('touch-hover')) {
+        e.preventDefault();
+        e.stopPropagation();
+        catCards.forEach(c => c.classList.remove('touch-hover'));
+        this.classList.add('touch-hover');
+      }
+      // If already revealed, let the click through to the link naturally
+    });
+  });
+
+  // Tap outside any card → close all panels
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.cat-card')) {
+      catCards.forEach(c => c.classList.remove('touch-hover'));
+    }
+  });
+}
