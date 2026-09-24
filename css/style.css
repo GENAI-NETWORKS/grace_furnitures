@@ -84,16 +84,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: var(--gold);
   margin-bottom: 16px;
 }
-.section-label::before,
-.section-label::after {
-  content: '';
-  display: block;
-  width: 32px;
-  height: 1px;
-  background: var(--gold);
-}
 .section-label.dark { color: var(--gold-light); }
-.section-label.dark::before, .section-label.dark::after { background: var(--gold-light); }
 
 .section-title {
   font-family: 'Inter', system-ui, sans-serif;
@@ -128,13 +119,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .section-sub.light { color: rgba(255,255,255,0.75); }
 
 /* Gold divider */
-.gold-line {
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--gold), var(--gold-light));
-  border-radius: 2px;
-  margin: 20px 0;
-}
 
 /* ── Buttons ── */
 .btn {
@@ -561,7 +545,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   text-align: center;
   margin-bottom: 60px;
 }
-.categories-header .gold-line { margin-inline: auto; }
+
 
 .categories-grid {
   display: grid;
@@ -842,7 +826,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   text-align: center;
   margin-bottom: 60px;
 }
-.usp-header .gold-line { margin-inline: auto; }
+
 
 .usp-grid {
   display: grid;
@@ -914,7 +898,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   text-align: center;
   margin-bottom: 60px;
 }
-.spotlight-header .gold-line { margin-inline: auto; }
+
 
 .spotlight-hero {
   position: relative;
