@@ -1675,9 +1675,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero-ctas { flex-direction: column; align-items: flex-start; }
   .spotlight-hero { height: 300px; }
   .spotlight-hero-text { left: 20px; bottom: 24px; }
-  /* Push all content to the top of the viewport */
-  #hero { align-items: flex-start; }
-  .hero-content { padding: 90px 0 40px; }
+  /* Push all content to the top, shrink to fit content — no empty space below */
+  #hero { align-items: flex-start; min-height: auto; }
+  .hero-content { padding: 90px 0 50px; }
   .hero-bg { background-attachment: scroll; }
   /* Increase vertical gap between every line */
   .hero-eyebrow { font-size: 0.68rem; letter-spacing: 0.08em; margin-bottom: 22px; }
