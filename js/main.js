@@ -1,5 +1,5 @@
 /* =====================================================
-   GRACE™ Furniture — Main JavaScript
+   GRACE™ Furniture - Main JavaScript
    GSAP + ScrollTrigger powered interactions
    ===================================================== */
 
@@ -126,7 +126,7 @@ function initAnimations() {
         scrollTrigger: { trigger: el, start: 'top 88%' } });
   });
 
-  /* ── Category Cards — fade-up stagger ── */
+  /* ── Category Cards - fade-up stagger ── */
   gsap.fromTo('.cat-card',
     { opacity: 0, y: 60 },
     { opacity: 1, y: 0, stagger: 0.08, duration: 0.7, ease: 'power3.out',
