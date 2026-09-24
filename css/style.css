@@ -1620,7 +1620,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* Small Mobile (≤480px) */
 @media (max-width: 480px) {
   .container { width: 94vw; }
-  .categories-grid { grid-template-columns: 1fr; }
   .spotlight-grid { grid-template-columns: 1fr; }
   .usp-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
