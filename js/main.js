@@ -300,8 +300,8 @@ window.addEventListener('scroll', () => {
 /* ── Mobile Touch Hover Fix for Cards ── */
 const catCards = document.querySelectorAll('.cat-card');
 
-// Only apply touch logic on actual touch devices
-if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+// Apply touch logic universally so it works on desktop mobile simulators too
+if (true) {
   catCards.forEach(card => {
     card.addEventListener('click', function(e) {
       // If panel not yet revealed, reveal it and block the link
