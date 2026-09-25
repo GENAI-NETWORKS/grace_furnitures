@@ -67,9 +67,11 @@ export default function ClientScripts() {
       document.body.style.overflow = '';
     };
 
-    hamburger?.addEventListener('click', () => {
+    const handleHamburgerClick = () => {
       mobileDrawer?.classList.contains('open') ? closeDrawer() : openDrawer();
-    });
+    };
+
+    hamburger?.addEventListener('click', handleHamburgerClick);
     drawerOverlay?.addEventListener('click', closeDrawer);
     drawerCloseBtn?.addEventListener('click', closeDrawer);
     drawerLinks.forEach(link => link.addEventListener('click', closeDrawer));
@@ -180,6 +182,10 @@ export default function ClientScripts() {
       catCards.forEach(card => card.removeEventListener('click', handleCardClick as EventListener));
       document.removeEventListener('click', handleOutsideClick);
       contactForm?.removeEventListener('submit', handleFormSubmit);
+      hamburger?.removeEventListener('click', handleHamburgerClick);
+      drawerOverlay?.removeEventListener('click', closeDrawer);
+      drawerCloseBtn?.removeEventListener('click', closeDrawer);
+      drawerLinks.forEach(link => link.removeEventListener('click', closeDrawer));
       if (glowEl) glowEl.remove();
       observer.disconnect();
     };

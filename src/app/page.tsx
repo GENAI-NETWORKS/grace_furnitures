@@ -730,7 +730,7 @@ export default function HomePage() {
         {/*  Google Map Embed  */}
         <div className="map-wrap">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.852!2d78.0839!3d11.6548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1c!2sSalem%20Industrial%20Estate%2C%20Salem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1"
+            src="https://www.google.com/maps?q=Plot+No:+P-33,+Door+No:+120/2,+Salem+Industrial+Co-operative+Estate,+Salem-Ulundurpettai+Highway,+Udayapatti,+Salem,+TN+-+636014&amp;output=embed"
             loading="lazy"
             title="GRACE™ Furniture factory location in Salem, Tamil Nadu"
             referrerPolicy="no-referrer-when-downgrade"
@@ -877,6 +877,7 @@ export default function HomePage() {
     </>
   );
 }
+
 
 
 
