@@ -145,18 +145,33 @@ export default function ClientScripts() {
     };
     contactForm?.addEventListener('submit', handleFormSubmit);
 
-    // Scroll-reveal animations (CSS class-based, no GSAP needed)
+    // Scroll-reveal animations using CSS transitions
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
+            const el = entry.target as HTMLElement;
+            // Add stagger delay for sibling elements
+            const parent = el.parentElement;
+            if (parent) {
+              const siblings = Array.from(parent.children).filter(c =>
+                c.classList.contains('reveal-up') ||
+                c.classList.contains('reveal-left') ||
+                c.classList.contains('reveal-right') ||
+                c.classList.contains('reveal-scale') ||
+                c.classList.contains('reveal-fade')
+              );
+              const idx = siblings.indexOf(el);
+              el.style.transitionDelay = `${idx * 0.08}s`;
+            }
+            el.classList.add('in-view');
+            observer.unobserve(el);
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
     );
-    document.querySelectorAll('.section-title, .section-label, .section-sub, .cat-card, .usp-item, .spot-card, .biz-icon-item, .testi-card').forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-scale, .reveal-fade').forEach(el => observer.observe(el));
 
     return () => {
       clearTimeout(loaderTimer);
