@@ -327,7 +327,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* Mobile Drawer */
 .mobile-drawer {
-  display: none;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   right: 0;
@@ -337,12 +338,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: var(--off-black);
   z-index: 1002;
   transform: translateX(100%);
-  transition: transform var(--transition-slow);
+  transition: transform var(--transition-slow), visibility var(--transition-slow);
   padding: 100px 32px 40px;
   overflow-y: auto;
   box-shadow: -8px 0 40px rgba(0,0,0,0.5);
+  visibility: hidden;
+  pointer-events: none;
 }
-.mobile-drawer.open { transform: translateX(0); }
+.mobile-drawer.open {
+  transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
+}
 
 .drawer-links { display: flex; flex-direction: column; gap: 4px; }
 .drawer-links a {
@@ -359,13 +366,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .drawer-links a:hover { color: var(--gold); padding-left: 8px; }
 
 .drawer-overlay {
-  display: none;
+  display: block;
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.6);
   z-index: 1001;
   opacity: 0;
-  transition: opacity var(--transition);
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition), visibility var(--transition);
 }
 
 .drawer-close {
@@ -386,7 +395,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: rgba(166,25,46,0.8);
   color: var(--white);
 }
-.drawer-overlay.show { opacity: 1; }
+.drawer-overlay.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 
 .drawer-contact {
   margin-top: 32px;
