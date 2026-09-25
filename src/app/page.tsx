@@ -700,6 +700,21 @@ export default function HomePage() {
       </nav>
     </div>
   </div>
+
+  {/*  Powered By  */}
+  <div style={{"borderTop":"1px solid rgba(255,255,255,0.04)","textAlign":"center","padding":"12px 0","fontSize":"0.72rem","color":"rgba(255,255,255,0.35)"}}>
+    Powered by{' '}
+    <a
+      href="https://genaitechnology.in/"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{"color":"rgba(255,255,255,0.55)","fontWeight":600,"textDecoration":"none","transition":"color 0.2s"}}
+      onMouseEnter={e => (e.currentTarget.style.color = 'var(--gold)')}
+      onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.55)')}
+    >
+      Gen-AI Tech | IT Solutions Salem
+    </a>
+  </div>
 </footer>
 
 
