@@ -22,40 +22,6 @@ export default function HomePage() {
      ================================================  */}
 <Navbar />
 
-    {/*  Desktop CTA  */}
-
-
-    {/*  Hamburger  */}
-    <button className="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-{/*  Mobile Drawer  */}
-<div className="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
-<nav className="mobile-drawer" id="mobile-drawer" aria-label="Mobile navigation" role="navigation">
-  <button className="drawer-close" id="drawer-close-btn" aria-label="Close menu">
-    <X width="28" height="28" />
-  </button>
-  <div className="drawer-links">
-    <a href="#hero"><Home width="18" height="18" style={{"verticalAlign":"-4px","marginRight":"6px"}} /> Home</a>
-    <a href="#about"><Factory width="18" height="18" style={{"verticalAlign":"-4px","marginRight":"6px"}} /> About Us</a>
-    <a href="#categories"><Sofa width="18" height="18" style={{"verticalAlign":"-4px","marginRight":"6px"}} /> Products</a>
-    <a href="#business"><Handshake width="18" height="18" style={{"verticalAlign":"-4px","marginRight":"6px"}} /> B2B Solutions</a>
-    <a href="#spotlight"><Image width="18" height="18" style={{"verticalAlign":"-4px","marginRight":"6px"}} /> Gallery</a>
-    <a href="#usp"><Star width="18" height="18" style={{"verticalAlign":"-4px","marginRight":"6px"}} /> Why Choose Us</a>
-    <a href="#contact"><Phone width="18" height="18" style={{"verticalAlign":"-4px","marginRight":"6px"}} /> Contact</a>
-  </div>
-  <div className="drawer-contact">
-    <a href="tel:+919842025243"><Phone width="18" height="18" style={{"verticalAlign":"-4px","marginRight":"6px"}} /> +91 98420 25243</a>
-    <a href="https://wa.me/919842025243" target="_blank" rel="noopener"><MessageCircle width="18" height="18" style={{"verticalAlign":"-4px","marginRight":"6px"}} /> WhatsApp Us</a>
-    <div style={{"marginTop":"20px"}}>
-      <a href="#contact" className="btn btn-gold" style={{"width":"100%","justifyContent":"center"}}>Get a Quote</a>
-    </div>
-  </div>
-</nav>
-
 {/*  ================================================
      HERO SECTION
      ================================================  */}
@@ -824,6 +790,7 @@ export default function HomePage() {
     </>
   );
 }
+
 
 
 
