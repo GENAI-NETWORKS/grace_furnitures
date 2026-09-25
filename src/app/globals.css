@@ -1714,6 +1714,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ── Selection color ── */
 ::selection { background: rgba(166,25,46,0.25); color: var(--espresso-dark); }
 
+/* Powered By link */
+.powered-by-link {
+  color: rgba(255,255,255,0.55);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.powered-by-link:hover { color: var(--gold); }
+
+
 
 
 

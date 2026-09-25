@@ -708,9 +708,7 @@ export default function HomePage() {
       href="https://genaitechnology.in/"
       target="_blank"
       rel="noopener noreferrer"
-      style={{"color":"rgba(255,255,255,0.55)","fontWeight":600,"textDecoration":"none","transition":"color 0.2s"}}
-      onMouseEnter={e => (e.currentTarget.style.color = 'var(--gold)')}
-      onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.55)')}
+      className="powered-by-link"
     >
       Gen-AI Tech | IT Solutions Salem
     </a>
