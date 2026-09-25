@@ -35,16 +35,7 @@ export default function HomePage() {
         Premium B2B Furniture Manufacturer · Salem, Tamil Nadu
       </div>
 
-      <h1 className="hero-headline" id="hero-headline">
-        <span className="word">Premium</span>
-        <span className="word"> </span>
-        <span className="word">Furniture</span>
-        <span className="word"> </span>
-        <span className="word">for</span>
-        <span className="word" style={{"color":"var(--gold)","fontStyle":"italic"}}> Every</span>
-        <span className="word"> </span>
-        <span className="word" style={{"color":"var(--gold)","fontStyle":"italic"}}>Space</span>
-      </h1>
+      <h1 className="hero-headline" id="hero-headline">Premium Furniture for <span style={{ color: "var(--gold)", fontStyle: "italic" }}>Every Space</span></h1>
 
       <p className="hero-sub">Factory-direct quality for showrooms, hotels, interior designers &amp; wholesalers.</p>
 
@@ -790,6 +781,7 @@ export default function HomePage() {
     </>
   );
 }
+
 
 
 
