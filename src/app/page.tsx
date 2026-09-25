@@ -1,3 +1,5 @@
+import Navbar from '@/components/Navbar';
+import UspSection from '@/components/UspSection';
 
 import { X, Home, Factory, Sofa, Handshake, Image, Star, Phone, MessageCircle, Award, Zap, Package, Target, MapPin, Building2, BedDouble, Utensils, DoorOpen, Settings, Palette, Crown, CheckCircle, Clock } from 'lucide-react';
 
@@ -18,23 +20,7 @@ export default function HomePage() {
 {/*  ================================================
      NAVBAR
      ================================================  */}
-<header id="navbar" role="banner">
-  <div className="container nav-inner">
-
-    {/*  Logo  */}
-    <a href="#hero" className="nav-logo" aria-label="GRACE™ Furniture - Home">
-      <img src="images/logo.png" alt="GRACE Logo" className="logo-img" />
-    </a>
-
-    {/*  Desktop Nav Links  */}
-    <nav className="nav-links" role="navigation" aria-label="Primary navigation">
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
-      <a href="#categories">Products</a>
-      <a href="#business">B2B Solutions</a>
-      <a href="#spotlight">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<Navbar />
 
     {/*  Desktop CTA  */}
 
@@ -390,46 +376,7 @@ export default function HomePage() {
 {/*  ================================================
      WHY CHOOSE US / USP STRIP
      ================================================  */}
-<section id="usp" aria-labelledby="usp-title">
-  <div className="container">
-    <div className="usp-header">
-      <div className="section-label">Why GRACE™</div>
-      <h2 className="section-title" id="usp-title">Why Choose <span className="gold">GRACE™</span></h2>
-      
-      <p className="section-sub" style={{"margin":"0 auto","textAlign":"center","marginTop":"16px"}}>
-        Five core pillars that make us the preferred furniture manufacturing partner for India's top businesses.
-      </p>
-    </div>
-
-    <div className="usp-grid" role="list">
-      <div className="usp-item" role="listitem">
-        <div className="usp-icon" aria-hidden="true"><Factory width="32" height="32" color="var(--crimson)" /></div>
-        <h3 className="usp-title">Factory Direct Supply</h3>
-        <p className="usp-desc">No middlemen. We manufacture and supply directly, giving you better pricing and full transparency.</p>
-      </div>
-      <div className="usp-item" role="listitem">
-        <div className="usp-icon" aria-hidden="true"><Star width="32" height="32" color="var(--crimson)" /></div>
-        <h3 className="usp-title">Consistent Quality</h3>
-        <p className="usp-desc">Strict quality control at every stage. Every piece that leaves our factory meets our premium standard.</p>
-      </div>
-      <div className="usp-item" role="listitem">
-        <div className="usp-icon" aria-hidden="true"><Zap width="32" height="32" color="var(--crimson)" /></div>
-        <h3 className="usp-title">On-Time Delivery</h3>
-        <p className="usp-desc">We understand your project timelines. Our logistics team ensures on-schedule delivery, every time.</p>
-      </div>
-      <div className="usp-item" role="listitem">
-        <div className="usp-icon" aria-hidden="true"><Palette width="32" height="32" color="var(--crimson)" /></div>
-        <h3 className="usp-title">Custom Orders</h3>
-        <p className="usp-desc">Send us your design requirements or dimensions. We'll manufacture it exactly to your specifications.</p>
-      </div>
-      <div className="usp-item" role="listitem">
-        <div className="usp-icon" aria-hidden="true"><Handshake width="32" height="32" color="var(--crimson)" /></div>
-        <h3 className="usp-title">Trusted Partner</h3>
-        <p className="usp-desc">Long-term B2B relationships with showrooms, hotels, and designers across Tamil Nadu and beyond.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<UspSection />
 {/*  ================================================
      SPOTLIGHT - DRESSING TABLES
      ================================================  */}
@@ -877,6 +824,7 @@ export default function HomePage() {
     </>
   );
 }
+
 
 
 

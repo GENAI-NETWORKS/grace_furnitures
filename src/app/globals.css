@@ -353,9 +353,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-bottom: 1px solid rgba(255,255,255,0.08);
   display: block;
   transition: color var(--transition), padding-left var(--transition);
-  opacity: 0;
-  transform: translateX(30px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
+.mobile-drawer.open .drawer-links a { opacity: 1; transform: translateX(0); }
 .drawer-links a:hover { color: var(--gold); padding-left: 8px; }
 
 .drawer-overlay {
@@ -1702,6 +1702,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* ── Selection color ── */
 ::selection { background: rgba(166,25,46,0.25); color: var(--espresso-dark); }
+
 
 
 
