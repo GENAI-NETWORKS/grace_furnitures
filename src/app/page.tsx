@@ -677,8 +677,8 @@ export default function HomePage() {
         </div>
         <p>Premium furniture manufacturer in Salem, Tamil Nadu. Factory-direct supply for showrooms, hotels, interior designers, wholesalers, and corporate clients. Quality you can trust, delivery you can count on.</p>
         <div className="footer-socials" role="list" aria-label="Social media links">
-          <a href="#" className="social-btn" role="listitem" aria-label="Follow GRACE™ on Facebook">f</a>
-          <a href="#" className="social-btn" role="listitem" aria-label="Follow GRACE™ on Instagram">in</a>
+          <a href="https://www.facebook.com/profile.php?id=61594065782162" className="social-btn" role="listitem" aria-label="Follow GRACE™ on Facebook" target="_blank" rel="noopener">f</a>
+          <a href="https://www.instagram.com/grace_furnituresalem/" className="social-btn" role="listitem" aria-label="Follow GRACE™ on Instagram" target="_blank" rel="noopener">in</a>
           <a href="#" className="social-btn" role="listitem" aria-label="Follow GRACE™ on YouTube" style={{"fontSize":"0.7rem"}}>▶</a>
           <a href="https://wa.me/919842025243" className="social-btn" role="listitem" aria-label="Chat with GRACE™ on WhatsApp" style={{"fontSize":"0.75rem"}} target="_blank" rel="noopener">WA</a>
         </div>
