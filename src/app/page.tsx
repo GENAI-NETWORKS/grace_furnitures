@@ -195,7 +195,7 @@ export default function HomePage() {
     <div className="categories-grid" role="list" aria-label="Product categories">
 
       {/*  Card 1: Wardrobes  */}
-      <article className="cat-card reveal-up" role="listitem" tabIndex={0} aria-label="Wardrobes & Storage">
+      <article className="cat-card" role="listitem" tabIndex={0} aria-label="Wardrobes & Storage">
         <img src="images/cat_wardrobe.jpg" alt="Premium wooden sliding wardrobe with gold handles" className="cat-card-img" loading="lazy" />
         <div className="cat-card-overlay">
           <span className="cat-num">01</span>
@@ -209,7 +209,7 @@ export default function HomePage() {
       </article>
 
       {/*  Card 2: Bookshelves  */}
-      <article className="cat-card reveal-up" role="listitem" tabIndex={0} aria-label="Bookshelves & Display Cabinets">
+      <article className="cat-card" role="listitem" tabIndex={0} aria-label="Bookshelves & Display Cabinets">
         <img src="images/cat_bookshelf.jpg" alt="Elegant display bookshelf cabinet with glass doors and warm lighting" className="cat-card-img" loading="lazy" />
         <div className="cat-card-overlay">
           <span className="cat-num">02</span>
@@ -223,7 +223,7 @@ export default function HomePage() {
       </article>
 
       {/*  Card 3: Office Furniture  */}
-      <article className="cat-card reveal-up" role="listitem" tabIndex={0} aria-label="Office Furniture">
+      <article className="cat-card" role="listitem" tabIndex={0} aria-label="Office Furniture">
         <img src="images/cat_office.jpg" alt="Modern executive office desk setup with leather chair" className="cat-card-img" loading="lazy" />
         <div className="cat-card-overlay">
           <span className="cat-num">03</span>
@@ -237,7 +237,7 @@ export default function HomePage() {
       </article>
 
       {/*  Card 4: Bedroom  */}
-      <article className="cat-card reveal-up" role="listitem" tabIndex={0} aria-label="Bedroom Furniture">
+      <article className="cat-card" role="listitem" tabIndex={0} aria-label="Bedroom Furniture">
         <img src="images/cat_bedroom.jpg" alt="Luxury bedroom furniture set with tufted headboard" className="cat-card-img" loading="lazy" />
         <div className="cat-card-overlay">
           <span className="cat-num">04</span>
@@ -251,7 +251,7 @@ export default function HomePage() {
       </article>
 
       {/*  Card 5: Dining  */}
-      <article className="cat-card reveal-up" role="listitem" tabIndex={0} aria-label="Dining Furniture">
+      <article className="cat-card" role="listitem" tabIndex={0} aria-label="Dining Furniture">
         <img src="images/cat_dining.jpg" alt="Elegant dining table with crystal chandelier" className="cat-card-img" loading="lazy" />
         <div className="cat-card-overlay">
           <span className="cat-num">05</span>
@@ -265,7 +265,7 @@ export default function HomePage() {
       </article>
 
       {/*  Card 6: Sofa Sets  */}
-      <article className="cat-card reveal-up" role="listitem" tabIndex={0} aria-label="Sofa Sets">
+      <article className="cat-card" role="listitem" tabIndex={0} aria-label="Sofa Sets">
         <img src="images/cat_sofa.jpg" alt="Premium luxury sofa set with gold velvet upholstery" className="cat-card-img" loading="lazy" />
         <div className="cat-card-overlay">
           <span className="cat-num">06</span>
@@ -279,7 +279,7 @@ export default function HomePage() {
       </article>
 
       {/*  Card 7: Dressing Tables  */}
-      <article className="cat-card reveal-up" role="listitem" tabIndex={0} aria-label="Dressing Tables">
+      <article className="cat-card" role="listitem" tabIndex={0} aria-label="Dressing Tables">
         <img src="images/cat_dressing.jpg" alt="Elegant wooden dressing table with oval LED mirror" className="cat-card-img" loading="lazy" />
         <div className="cat-card-overlay">
           <span className="cat-num">07</span>
@@ -293,7 +293,7 @@ export default function HomePage() {
       </article>
 
       {/*  Card 8: Custom Solutions  */}
-      <article className="cat-card reveal-up" role="listitem" tabIndex={0} aria-label="Customized Solutions">
+      <article className="cat-card" role="listitem" tabIndex={0} aria-label="Customized Solutions">
         <img src="images/cat_custom.jpg" alt="Artisan craftsman building bespoke wooden furniture" className="cat-card-img" loading="lazy" />
         <div className="cat-card-overlay">
           <span className="cat-num">08</span>
@@ -877,6 +877,7 @@ export default function HomePage() {
     </>
   );
 }
+
 
 
 
