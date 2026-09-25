@@ -660,8 +660,8 @@ export default function HomePage() {
             </div>
           </div>
           <div className="form-group">
-            <select id="form-category" name="category" required>
-              <option value="" disabled selected></option>
+            <select id="form-category" name="category" required defaultValue="">
+              <option value="" disabled></option>
               <option value="wardrobes">Wardrobes &amp; Storage</option>
               <option value="bookshelves">Bookshelves &amp; Cabinets</option>
               <option value="office">Office Furniture</option>
@@ -877,5 +877,6 @@ export default function HomePage() {
     </>
   );
 }
+
 
 
