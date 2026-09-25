@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import UspSection from '@/components/UspSection';
+import ContactForm from '@/components/ContactForm';
 
 import { X, Home, Factory, Sofa, Handshake, Image, Star, Phone, MessageCircle, Award, Zap, Package, Target, MapPin, Building2, BedDouble, Utensils, DoorOpen, Settings, Palette, Crown, CheckCircle, Clock } from 'lucide-react';
 
@@ -538,59 +539,7 @@ export default function HomePage() {
     <div className="contact-grid">
 
       {/*  Contact Form  */}
-      <div className="contact-form-wrap">
-        <h3 className="form-title">Send an Enquiry</h3>
-        <p className="form-sub">Fill in the details below and we'll get back to you with pricing and availability.</p>
-
-        <form id="contact-form" noValidate>
-          <div className="form-row">
-            <div className="form-group">
-              <input type="text" id="form-name" name="name" placeholder=" " required autoComplete="name" />
-              <label htmlFor="form-name">Your Name *</label>
-            </div>
-            <div className="form-group">
-              <input type="text" id="form-company" name="company" placeholder=" " autoComplete="organization" />
-              <label htmlFor="form-company">Company / Business</label>
-            </div>
-          </div>
-          <div className="form-row">
-            <div className="form-group">
-              <input type="tel" id="form-phone" name="phone" placeholder=" " required autoComplete="tel" />
-              <label htmlFor="form-phone">Phone Number *</label>
-            </div>
-            <div className="form-group">
-              <input type="email" id="form-email" name="email" placeholder=" " autoComplete="email" />
-              <label htmlFor="form-email">Email Address</label>
-            </div>
-          </div>
-          <div className="form-group">
-            <select id="form-category" name="category" required defaultValue="">
-              <option value="" disabled></option>
-              <option value="wardrobes">Wardrobes &amp; Storage</option>
-              <option value="bookshelves">Bookshelves &amp; Cabinets</option>
-              <option value="office">Office Furniture</option>
-              <option value="bedroom">Bedroom Furniture</option>
-              <option value="dining">Dining Furniture</option>
-              <option value="sofa">Sofa Sets</option>
-              <option value="dressing">Dressing Tables</option>
-              <option value="custom">Customized Solutions</option>
-              <option value="multiple">Multiple Categories</option>
-            </select>
-            <label htmlFor="form-category">Product Category *</label>
-          </div>
-          <div className="form-group">
-            <textarea id="form-message" name="message" placeholder=" " rows={4}></textarea>
-            <label htmlFor="form-message">Your Requirements / Message</label>
-          </div>
-          <button type="submit" className="btn btn-crimson form-submit" id="form-submit-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-            Send Enquiry
-          </button>
-          <div className="form-success" role="alert" aria-live="polite">
-            <CheckCircle width="16" height="16" style={{"verticalAlign":"-3px","marginRight":"4px"}} /> Thank you! We've received your enquiry and will respond within 24 hours.
-          </div>
-        </form>
-      </div>
+      <ContactForm />
 
       {/*  Contact Info  */}
       <div className="contact-info">
@@ -622,14 +571,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        <a href="https://wa.me/919842025243?text=Hello%20GRACE%E2%84%A2%20Furniture%2C%20I%20would%20like%20to%20enquire%20about%20your%20products."
-           className="wa-btn"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Contact GRACE™ on WhatsApp">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-          Chat on WhatsApp
-        </a>
 
         {/*  Google Map Embed  */}
         <div className="map-wrap">
@@ -761,19 +702,7 @@ export default function HomePage() {
   </div>
 </footer>
 
-{/*  ================================================
-     FLOATING WHATSAPP BUTTON
-     ================================================  */}
-<a href="https://wa.me/919842025243?text=Hello%20GRACE%E2%84%A2%20Furniture%2C%20I%20would%20like%20to%20enquire%20about%20your%20furniture%20products."
-   className="wa-float"
-   target="_blank"
-   rel="noopener noreferrer"
-   id="whatsapp-float"
-   aria-label="Chat with GRACE™ Furniture on WhatsApp">
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
-  </svg>
-</a>
+
 {/*  ── Show desktop CTA after scroll ──  */}
 
 
