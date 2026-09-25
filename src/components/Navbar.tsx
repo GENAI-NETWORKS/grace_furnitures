@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { Home, Factory, Sofa, Handshake, Image as ImageIcon, Star, Phone, MessageCircle, X } from 'lucide-react';
+import { Home, Factory, Sofa, Handshake, Image as ImageIcon, Star, Phone, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,13 +86,6 @@ export default function Navbar() {
           <a href="#spotlight" onClick={closeMenu}><ImageIcon width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> Gallery</a>
           <a href="#usp" onClick={closeMenu}><Star width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> Why Choose Us</a>
           <a href="#contact" onClick={closeMenu}><Phone width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> Contact</a>
-        </div>
-        <div className="drawer-contact">
-          <a href="tel:+919842025243"><Phone width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> +91 98420 25243</a>
-          <a href="https://wa.me/919842025243" target="_blank" rel="noopener"><MessageCircle width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> WhatsApp Us</a>
-          <div style={{ marginTop: '20px' }}>
-            <a href="#contact" className="btn btn-gold" style={{ width: '100%', justifyContent: 'center' }} onClick={closeMenu}>Get a Quote</a>
-          </div>
         </div>
       </nav>
     </>
