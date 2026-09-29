@@ -10,13 +10,6 @@ export default function HomePage() {
     <>
       
 
-{/*  ================================================
-     PAGE LOADER
-     ================================================  */}
-<div className="page-loader" role="status" aria-label="Loading GRACE™ website">
-  <img src="images/logo.png" alt="GRACE Logo" className="logo-img" />
-  <div className="loader-bar"><div className="loader-bar-fill"></div></div>
-</div>
 
 {/*  ================================================
      NAVBAR
@@ -33,12 +26,12 @@ export default function HomePage() {
 
       <div className="hero-eyebrow">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        Premium B2B Furniture Manufacturer · Salem, Tamil Nadu
+        Factory-Direct · Salem, Tamil Nadu
       </div>
 
       <h1 className="hero-headline" id="hero-headline">Premium Furniture for <span style={{ color: "var(--gold)", fontStyle: "italic" }}>Every Space</span></h1>
 
-      <p className="hero-sub">Factory-direct quality for showrooms, hotels, interior designers &amp; wholesalers.</p>
+      <p className="hero-sub">Factory-direct. Bulk-ready. Custom finishes. Pan-India delivery.</p>
 
       <div className="hero-qualities" role="list">
         <span className="hero-quality" role="listitem">Stylish</span>
@@ -74,11 +67,8 @@ export default function HomePage() {
         <div className="section-label">About GRACE™</div>
         <h2 className="section-title">Modern Spaces.<br /><span className="gold">Stronger</span> Businesses.</h2>
         
-        <p className="section-sub" style={{"marginBottom":"20px","textAlign":"justify"}}>
-          GRACE™ is a factory-direct furniture manufacturer based in Salem, Tamil Nadu, with over a decade of experience crafting premium furniture for India's most discerning commercial clients.
-        </p>
-        <p className="section-sub" style={{"marginBottom":"32px","textAlign":"justify"}}>
-          From five-star hotels to showrooms, corporate offices to interior design studios - our clients trust us for consistent quality, on-time delivery, and the flexibility to handle custom bulk orders at scale.
+        <p className="section-sub" style={{"marginBottom":"32px"}}>
+          Salem-based manufacturer. 15+ years. Supplying hotels, showrooms &amp; designers with factory-direct furniture — no middlemen, no compromises.
         </p>
 
       </div>
@@ -132,7 +122,7 @@ export default function HomePage() {
       <h2 className="section-title" id="categories-title">Crafted for <span className="gold">Every Space</span></h2>
       
       <p className="section-sub" style={{"margin":"0 auto","textAlign":"center","marginTop":"16px"}}>
-        Premium furniture collections designed for commercial excellence - built to impress, built to last.
+        8 categories. Bulk orders. Custom specs. All from one factory.
       </p>
     </div>
 
@@ -147,7 +137,7 @@ export default function HomePage() {
         </div>
         <div className="cat-hover-panel">
           <span className="cat-hover-title">Wardrobes &amp; Storage</span>
-          <p className="cat-hover-desc">Sliding and hinged wardrobes in premium wood finishes with ample storage solutions.</p>
+          <p className="cat-hover-desc">Sliding &amp; hinged. Premium wood. Bulk-order ready.</p>
           <a href="#contact" className="cat-view-link" aria-label="Enquire about Wardrobes">Enquire Now →</a>
         </div>
       </article>
@@ -161,7 +151,7 @@ export default function HomePage() {
         </div>
         <div className="cat-hover-panel">
           <span className="cat-hover-title">Bookshelves &amp; Cabinets</span>
-          <p className="cat-hover-desc">Display cabinets and bookshelves with glass or solid doors, LED-ready interiors.</p>
+          <p className="cat-hover-desc">Glass or solid doors. LED-ready interiors.</p>
           <a href="#contact" className="cat-view-link" aria-label="Enquire about Bookshelves">Enquire Now →</a>
         </div>
       </article>
@@ -175,7 +165,7 @@ export default function HomePage() {
         </div>
         <div className="cat-hover-panel">
           <span className="cat-hover-title">Office Furniture</span>
-          <p className="cat-hover-desc">Executive desks, workstations, conference tables, and ergonomic seating solutions.</p>
+          <p className="cat-hover-desc">Desks, workstations &amp; conference tables. Corporate-grade.</p>
           <a href="#contact" className="cat-view-link" aria-label="Enquire about Office Furniture">Enquire Now →</a>
         </div>
       </article>
@@ -189,7 +179,7 @@ export default function HomePage() {
         </div>
         <div className="cat-hover-panel">
           <span className="cat-hover-title">Bedroom Furniture</span>
-          <p className="cat-hover-desc">Complete bedroom sets - beds, side tables, chest of drawers in premium finishes.</p>
+          <p className="cat-hover-desc">Beds, side tables, drawers. Hotel-grade finishes.</p>
           <a href="#contact" className="cat-view-link" aria-label="Enquire about Bedroom Furniture">Enquire Now →</a>
         </div>
       </article>
@@ -203,7 +193,7 @@ export default function HomePage() {
         </div>
         <div className="cat-hover-panel">
           <span className="cat-hover-title">Dining Furniture</span>
-          <p className="cat-hover-desc">Dining tables and chair sets in 4, 6, and 8-seater configurations with upholstered options.</p>
+          <p className="cat-hover-desc">4, 6 &amp; 8-seater sets. Upholstered options available.</p>
           <a href="#contact" className="cat-view-link" aria-label="Enquire about Dining Furniture">Enquire Now →</a>
         </div>
       </article>
@@ -217,7 +207,7 @@ export default function HomePage() {
         </div>
         <div className="cat-hover-panel">
           <span className="cat-hover-title">Sofa Sets</span>
-          <p className="cat-hover-desc">L-shaped, sectional, and classic sofa sets with premium fabric and leather options.</p>
+          <p className="cat-hover-desc">L-shaped, sectional &amp; classic. Fabric or leather.</p>
           <a href="#contact" className="cat-view-link" aria-label="Enquire about Sofa Sets">Enquire Now →</a>
         </div>
       </article>
@@ -231,7 +221,7 @@ export default function HomePage() {
         </div>
         <div className="cat-hover-panel">
           <span className="cat-hover-title">Dressing Tables</span>
-          <p className="cat-hover-desc">Modern vanity and dressing tables with mirrors, drawers, and various finish options.</p>
+          <p className="cat-hover-desc">Mirrors, drawers, multi-finish. Modern &amp; classic styles.</p>
           <a href="#contact" className="cat-view-link" aria-label="Enquire about Dressing Tables">Enquire Now →</a>
         </div>
       </article>
@@ -245,7 +235,7 @@ export default function HomePage() {
         </div>
         <div className="cat-hover-panel">
           <span className="cat-hover-title">Customized Solutions</span>
-          <p className="cat-hover-desc">Bespoke furniture designed and manufactured to your exact specifications and brand standards.</p>
+          <p className="cat-hover-desc">Your spec, your brand. We manufacture it.</p>
           <a href="#contact" className="cat-view-link" aria-label="Enquire about Custom Solutions">Enquire Now →</a>
         </div>
       </article>
@@ -270,14 +260,16 @@ export default function HomePage() {
       </div>
 
       <div className="business-content">
-        <div className="section-label dark">Furniture Solutions</div>
-        <span className="business-script">for Your Business</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
+          <div className="section-label dark" style={{ marginBottom: 0 }}>Furniture Solutions</div>
+          <span className="business-script" style={{ marginBottom: 0 }}>for Your Business</span>
+        </div>
         <h2 className="section-title light" id="business-title">
           The B2B Partner<br />You <span className="gold">Can Rely On</span>
         </h2>
         
         <p className="section-sub light">
-          We supply premium factory-direct furniture to showrooms, hotels, interior designers, wholesalers, and corporate offices across India. Consistent quality, flexible quantities, custom finishes, on-time delivery.
+          Factory-direct supply across India. Flexible MOQ, custom finishes, on-time — every time.
         </p>
 
         <div className="business-icon-grid">
@@ -345,7 +337,7 @@ export default function HomePage() {
       <h2 className="section-title" id="spotlight-title">Dressing Tables for <span className="script">Modern Spaces</span></h2>
       
       <p className="section-sub" style={{"textAlign":"center","margin":"16px auto 0"}}>
-        Vanity and dressing solutions crafted to elevate bedrooms, hotel suites, and showroom displays.
+        4 styles. Hotel &amp; showroom-grade. Custom dimensions on request.
       </p>
     </div>
 
@@ -370,7 +362,7 @@ export default function HomePage() {
         <div className="spot-card-body">
           <span className="spot-card-tag">Style 01</span>
           <h4 className="spot-card-title">Modern &amp; Minimal</h4>
-          <p className="spot-card-desc">Clean lines, matte finishes, integrated LED lighting. For contemporary bedrooms and boutique hotels.</p>
+          <p className="spot-card-desc">Matte finish. Integrated LED. Perfect for boutique hotels.</p>
         </div>
       </div>
       <div className="spot-card" role="listitem" tabIndex={0}>
@@ -379,7 +371,7 @@ export default function HomePage() {
         <div className="spot-card-body">
           <span className="spot-card-tag">Style 02</span>
           <h4 className="spot-card-title">Classic Elegance</h4>
-          <p className="spot-card-desc">Rich walnut wood, ornate mirror frames, brass hardware. Timeless appeal for luxury properties.</p>
+          <p className="spot-card-desc">Walnut wood. Brass hardware. Built for luxury properties.</p>
         </div>
       </div>
       <div className="spot-card" role="listitem" tabIndex={0}>
@@ -388,7 +380,7 @@ export default function HomePage() {
         <div className="spot-card-body">
           <span className="spot-card-tag">Style 03</span>
           <h4 className="spot-card-title">Trendy &amp; Versatile</h4>
-          <p className="spot-card-desc">Multi-tonal finishes, versatile storage, dual mirrors. Perfect for showrooms targeting younger demographics.</p>
+          <p className="spot-card-desc">Multi-tonal. Dual mirrors. Top seller in showrooms.</p>
         </div>
       </div>
       <div className="spot-card" role="listitem" tabIndex={0}>
@@ -397,7 +389,7 @@ export default function HomePage() {
         <div className="spot-card-body">
           <span className="spot-card-tag">Style 04</span>
           <h4 className="spot-card-title">Rich &amp; Premium</h4>
-          <p className="spot-card-desc">Full-length mirrors, gold accents, tufted seating, premium wood grain. Our flagship luxury collection.</p>
+          <p className="spot-card-desc">Gold accents. Tufted seating. Our flagship collection.</p>
         </div>
       </div>
     </div>
@@ -515,7 +507,7 @@ export default function HomePage() {
       <span className="cta-script">Your Space,</span>
       <h2 className="cta-title" id="cta-title">Our <span>Priority</span></h2>
       <p className="cta-sub">
-        Whether you're furnishing 10 rooms or 1,000 - GRACE™ delivers the quality, consistency, and service your business demands. Let's build something exceptional together.
+        10 rooms or 1,000 — same quality, same commitment. Get your quote in 24 hours.
       </p>
 
     </div>
@@ -532,7 +524,7 @@ export default function HomePage() {
       <h2 className="section-title" id="contact-title">Let's <span className="gold">Work Together</span></h2>
       
       <p className="section-sub" style={{"textAlign":"center","margin":"16px auto 0"}}>
-        Reach out with your requirements and our team will respond within 24 hours with a customized quote.
+        Share your requirement — we respond within 24 hours.
       </p>
     </div>
 
@@ -616,7 +608,7 @@ export default function HomePage() {
         <div className="footer-logo">
           <img src="images/logo.png" alt="GRACE Logo" className="logo-img" />
         </div>
-        <p>Premium furniture manufacturer in Salem, Tamil Nadu. Factory-direct supply for showrooms, hotels, interior designers, wholesalers, and corporate clients. Quality you can trust, delivery you can count on.</p>
+        <p>Factory-direct furniture from Salem, TN. Hotels, showrooms, designers &amp; corporates — supplied pan-India.</p>
         <div className="footer-socials" role="list" aria-label="Social media links">
           <a href="https://www.facebook.com/profile.php?id=61594065782162" className="social-btn" role="listitem" aria-label="Follow GRACE™ on Facebook" target="_blank" rel="noopener">f</a>
           <a href="https://www.instagram.com/grace_furnituresalem/" className="social-btn" role="listitem" aria-label="Follow GRACE™ on Instagram" target="_blank" rel="noopener">in</a>

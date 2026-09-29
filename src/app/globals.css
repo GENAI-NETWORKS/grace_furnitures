@@ -1642,46 +1642,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .stat-num { font-size: 2.8rem; }
 }
 
-/* =====================================================
-   PAGE TRANSITION
-   ===================================================== */
-.page-loader {
-  position: fixed;
-  inset: 0;
-  background: var(--off-black);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
-}
-.page-loader.hidden { opacity: 0; visibility: hidden; }
-.loader-logo {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: var(--gold);
-  letter-spacing: 0.1em;
-}
-.loader-bar {
-  width: 200px;
-  height: 2px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 2px;
-  overflow: hidden;
-}
-.loader-bar-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--crimson), var(--gold));
-  border-radius: 2px;
-  animation: loaderFill 1.2s cubic-bezier(0.4,0,0.2,1) forwards;
-}
-@keyframes loaderFill {
-  from { width: 0; }
-  to { width: 100%; }
-}
 
 /* ── About section responsive ── */
 @media (max-width: 1023px) {

@@ -5,17 +5,6 @@ import Script from 'next/script';
 
 export default function ClientScripts() {
   useEffect(() => {
-    // Page loader — dismiss after 1.4s
-    const dismissLoader = () => {
-      const loader = document.querySelector('.page-loader') as HTMLElement | null;
-      if (loader) {
-        loader.classList.add('hidden');
-      }
-    };
-
-    const loaderTimer = setTimeout(dismissLoader, 1400);
-
-    // Navbar scroll behavior
     const navbar = document.getElementById('navbar');
     const handleScroll = () => {
       const scroll = window.scrollY;
@@ -146,7 +135,6 @@ export default function ClientScripts() {
     document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-scale, .reveal-fade').forEach(el => observer.observe(el));
 
     return () => {
-      clearTimeout(loaderTimer);
       window.removeEventListener('scroll', handleScroll);
       anchors.forEach(anchor => anchor.removeEventListener('click', handleAnchorClick));
       catCards.forEach(card => card.removeEventListener('click', handleCardClick as EventListener));
