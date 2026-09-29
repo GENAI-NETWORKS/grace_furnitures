@@ -33,11 +33,7 @@ export default function HomePage() {
 
       <p className="hero-sub">Factory-direct. Bulk-ready. Custom finishes. Pan-India delivery.</p>
 
-      <div className="hero-qualities" role="list">
-        <span className="hero-quality" role="listitem">Stylish</span>
-        <span className="hero-quality" role="listitem">Durable</span>
-        <span className="hero-quality" role="listitem">Elegant</span>
-      </div>
+
 
       <div className="hero-trust" role="list" aria-label="Trust badges">
         <div className="trust-badge" role="listitem">
@@ -68,7 +64,7 @@ export default function HomePage() {
         <h2 className="section-title">Modern Spaces.<br /><span className="gold">Stronger</span> Businesses.</h2>
         
         <p className="section-sub" style={{"marginBottom":"32px"}}>
-          Salem-based manufacturer. 15+ years. Supplying hotels, showrooms &amp; designers with factory-direct furniture — no middlemen, no compromises.
+          Salem-based manufacturer. 15+ years. Supplying hotels, showrooms &amp; designers with factory-direct furniture no middlemen, no compromises.
         </p>
 
       </div>
@@ -269,7 +265,7 @@ export default function HomePage() {
         </h2>
         
         <p className="section-sub light">
-          Factory-direct supply across India. Flexible MOQ, custom finishes, on-time — every time.
+          Factory-direct supply across India. Flexible MOQ, custom finishes, on-time every time.
         </p>
 
         <div className="business-icon-grid">
@@ -507,7 +503,7 @@ export default function HomePage() {
       <span className="cta-script">Your Space,</span>
       <h2 className="cta-title" id="cta-title">Our <span>Priority</span></h2>
       <p className="cta-sub">
-        10 rooms or 1,000 — same quality, same commitment. Get your quote in 24 hours.
+        10 rooms or 1,000 same quality, same commitment. Get your quote in 24 hours.
       </p>
 
     </div>
@@ -524,7 +520,7 @@ export default function HomePage() {
       <h2 className="section-title" id="contact-title">Let's <span className="gold">Work Together</span></h2>
       
       <p className="section-sub" style={{"textAlign":"center","margin":"16px auto 0"}}>
-        Share your requirement — we respond within 24 hours.
+        Share your requirement we respond within 24 hours.
       </p>
     </div>
 
@@ -608,7 +604,7 @@ export default function HomePage() {
         <div className="footer-logo">
           <img src="images/logo.png" alt="GRACE Logo" className="logo-img" />
         </div>
-        <p>Factory-direct furniture from Salem, TN. Hotels, showrooms, designers &amp; corporates — supplied pan-India.</p>
+        <p>Factory-direct furniture from Salem, TN. Hotels, showrooms, designers &amp; corporates supplied pan-India.</p>
         <div className="footer-socials" role="list" aria-label="Social media links">
           <a href="https://www.facebook.com/profile.php?id=61594065782162" className="social-btn" role="listitem" aria-label="Follow GRACE™ on Facebook" target="_blank" rel="noopener">f</a>
           <a href="https://www.instagram.com/grace_furnituresalem/" className="social-btn" role="listitem" aria-label="Follow GRACE™ on Instagram" target="_blank" rel="noopener">in</a>
