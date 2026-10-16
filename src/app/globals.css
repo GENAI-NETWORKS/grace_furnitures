@@ -295,12 +295,14 @@ button {
   transition: padding var(--transition), background var(--transition), box-shadow var(--transition);
 }
 
-#navbar.scrolled {
-  background: rgba(26, 21, 18, 0.96);
+#navbar.scrolled,
+#navbar.nav-solid {
+  background: rgba(26, 21, 18, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  padding: 10px 0;
-  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.35);
+  padding: 12px 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(245, 197, 24, 0.12);
 }
 
 .nav-inner {
@@ -1644,6 +1646,7 @@ button {
 #contact {
   padding: var(--section-pad) 0;
   background: var(--cream-dark);
+  scroll-margin-top: 90px;
 }
 
 .contact-grid {

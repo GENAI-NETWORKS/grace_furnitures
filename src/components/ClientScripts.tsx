@@ -8,7 +8,7 @@ export default function ClientScripts() {
     const navbar = document.getElementById('navbar');
     const handleScroll = () => {
       const scroll = window.scrollY;
-      if (scroll > 60) {
+      if (scroll > 60 || navbar?.classList.contains('nav-solid')) {
         navbar?.classList.add('scrolled');
       } else {
         navbar?.classList.remove('scrolled');
@@ -50,6 +50,18 @@ export default function ClientScripts() {
       }
     };
     anchors.forEach(anchor => anchor.addEventListener('click', handleAnchorClick));
+
+    // Handle incoming hash on load (e.g. navigating to /gallery#contact)
+    if (window.location.hash) {
+      setTimeout(() => {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+          const offset = 80;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 150);
+    }
 
     // Cat card click-to-reveal hover panel
     const catCards = document.querySelectorAll('.cat-card');

@@ -1,8 +1,8 @@
 import Navbar from '@/components/Navbar';
 import UspSection from '@/components/UspSection';
-import ContactForm from '@/components/ContactForm';
+import Footer from '@/components/Footer';
 
-import { X, Home, Factory, Sofa, Handshake, Image, Star, Phone, MessageCircle, Award, Zap, Package, Target, MapPin, Building2, BedDouble, Utensils, DoorOpen, Settings, Palette, Crown, CheckCircle, Clock } from 'lucide-react';
+import { X, Home, Factory, Sofa, Handshake, Image, Star, Phone, MessageCircle, Award, Zap, Package, Target, MapPin, Building2, BedDouble, Utensils, DoorOpen, Settings, Palette, CheckCircle, Clock } from 'lucide-react';
 
 
 export default function HomePage() {
@@ -175,7 +175,7 @@ export default function HomePage() {
               <div className="cat-hover-panel">
                 <span className="cat-hover-title">Wardrobes &amp; Storage</span>
                 <p className="cat-hover-desc">Sliding &amp; hinged. Premium wood. Bulk-order ready.</p>
-                <a href="#contact" className="cat-view-link" aria-label="Enquire about Wardrobes">Enquire Now →</a>
+                <a href="/gallery#contact" className="cat-view-link" aria-label="Enquire about Wardrobes">Enquire Now →</a>
               </div>
             </article>
 
@@ -189,7 +189,7 @@ export default function HomePage() {
               <div className="cat-hover-panel">
                 <span className="cat-hover-title">Bookshelves &amp; Cabinets</span>
                 <p className="cat-hover-desc">Glass or solid doors. LED-ready interiors.</p>
-                <a href="#contact" className="cat-view-link" aria-label="Enquire about Bookshelves">Enquire Now →</a>
+                <a href="/gallery#contact" className="cat-view-link" aria-label="Enquire about Bookshelves">Enquire Now →</a>
               </div>
             </article>
 
@@ -203,7 +203,7 @@ export default function HomePage() {
               <div className="cat-hover-panel">
                 <span className="cat-hover-title">Office Furniture</span>
                 <p className="cat-hover-desc">Desks, workstations &amp; conference tables. Corporate-grade.</p>
-                <a href="#contact" className="cat-view-link" aria-label="Enquire about Office Furniture">Enquire Now →</a>
+                <a href="/gallery#contact" className="cat-view-link" aria-label="Enquire about Office Furniture">Enquire Now →</a>
               </div>
             </article>
 
@@ -217,7 +217,7 @@ export default function HomePage() {
               <div className="cat-hover-panel">
                 <span className="cat-hover-title">Bedroom Furniture</span>
                 <p className="cat-hover-desc">Beds, side tables, drawers. Hotel-grade finishes.</p>
-                <a href="#contact" className="cat-view-link" aria-label="Enquire about Bedroom Furniture">Enquire Now →</a>
+                <a href="/gallery#contact" className="cat-view-link" aria-label="Enquire about Bedroom Furniture">Enquire Now →</a>
               </div>
             </article>
 
@@ -231,7 +231,7 @@ export default function HomePage() {
               <div className="cat-hover-panel">
                 <span className="cat-hover-title">Dining Furniture</span>
                 <p className="cat-hover-desc">4, 6 &amp; 8-seater sets. Upholstered options available.</p>
-                <a href="#contact" className="cat-view-link" aria-label="Enquire about Dining Furniture">Enquire Now →</a>
+                <a href="/gallery#contact" className="cat-view-link" aria-label="Enquire about Dining Furniture">Enquire Now →</a>
               </div>
             </article>
 
@@ -245,7 +245,7 @@ export default function HomePage() {
               <div className="cat-hover-panel">
                 <span className="cat-hover-title">Sofa Sets</span>
                 <p className="cat-hover-desc">L-shaped, sectional &amp; classic. Fabric or leather.</p>
-                <a href="#contact" className="cat-view-link" aria-label="Enquire about Sofa Sets">Enquire Now →</a>
+                <a href="/gallery#contact" className="cat-view-link" aria-label="Enquire about Sofa Sets">Enquire Now →</a>
               </div>
             </article>
 
@@ -259,7 +259,7 @@ export default function HomePage() {
               <div className="cat-hover-panel">
                 <span className="cat-hover-title">Dressing Tables</span>
                 <p className="cat-hover-desc">Mirrors, drawers, multi-finish. Modern &amp; classic styles.</p>
-                <a href="#contact" className="cat-view-link" aria-label="Enquire about Dressing Tables">Enquire Now →</a>
+                <a href="/gallery#contact" className="cat-view-link" aria-label="Enquire about Dressing Tables">Enquire Now →</a>
               </div>
             </article>
 
@@ -273,7 +273,7 @@ export default function HomePage() {
               <div className="cat-hover-panel">
                 <span className="cat-hover-title">Customized Solutions</span>
                 <p className="cat-hover-desc">Your spec, your brand. We manufacture it.</p>
-                <a href="#contact" className="cat-view-link" aria-label="Enquire about Custom Solutions">Enquire Now →</a>
+                <a href="/gallery#contact" className="cat-view-link" aria-label="Enquire about Custom Solutions">Enquire Now →</a>
               </div>
             </article>
 
@@ -364,74 +364,7 @@ export default function HomePage() {
      WHY CHOOSE US / USP STRIP
      ================================================  */}
       <UspSection />
-      {/*  ================================================
-     SPOTLIGHT - DRESSING TABLES
-     ================================================  */}
-      <section id="spotlight" aria-labelledby="spotlight-title">
-        <div className="container">
-          <div className="spotlight-header">
-            <div className="section-label">Featured Collection</div>
-            <h2 className="section-title" id="spotlight-title">Dressing Tables for <span className="script">Modern Spaces</span></h2>
 
-            <p className="section-sub" style={{ "textAlign": "center", "margin": "16px auto 0" }}>
-              4 styles. Hotel &amp; showroom-grade. Custom dimensions on request.
-            </p>
-          </div>
-
-          {/*  Spotlight Hero  */}
-          <div className="spotlight-hero">
-            <img src="images/spotlight_hero.jpg" alt="Dressing Tables for Modern Spaces" className="spotlight-hero-img" loading="lazy" />
-            <div className="spotlight-hero-overlay" aria-hidden="true"></div>
-            <div className="spotlight-hero-text">
-              <div className="section-label dark">Signature Collection</div>
-              <h3 className="spotlight-hero-title">
-                Dressing Tables<br />for <span className="script-gold">Modern Spaces</span>
-              </h3>
-              <a href="#contact" className="btn btn-gold">Enquire About This Collection</a>
-            </div>
-          </div>
-
-          {/*  Style Variant Cards  */}
-          <div className="spotlight-grid" role="list">
-            <div className="spot-card" role="listitem" tabIndex={0}>
-              <div className="spot-card-img" role="img" aria-label="Modern and Minimal dressing table style" style={{ "background": "url('images/spotlight_1.jpg') center/cover no-repeat" }}>
-              </div>
-              <div className="spot-card-body">
-                <span className="spot-card-tag">Style 01</span>
-                <h4 className="spot-card-title">Modern &amp; Minimal</h4>
-                <p className="spot-card-desc">Matte finish. Integrated LED. Perfect for boutique hotels.</p>
-              </div>
-            </div>
-            <div className="spot-card" role="listitem" tabIndex={0}>
-              <div className="spot-card-img" role="img" aria-label="Classic Elegance dressing table style" style={{ "background": "url('images/spotlight_2.jpg') center/cover no-repeat" }}>
-              </div>
-              <div className="spot-card-body">
-                <span className="spot-card-tag">Style 02</span>
-                <h4 className="spot-card-title">Classic Elegance</h4>
-                <p className="spot-card-desc">Walnut wood. Brass hardware. Built for luxury properties.</p>
-              </div>
-            </div>
-            <div className="spot-card" role="listitem" tabIndex={0}>
-              <div className="spot-card-img" role="img" aria-label="Trendy and Versatile dressing table style" style={{ "background": "url('images/spotlight_3.jpg') center/cover no-repeat" }}>
-              </div>
-              <div className="spot-card-body">
-                <span className="spot-card-tag">Style 03</span>
-                <h4 className="spot-card-title">Trendy &amp; Versatile</h4>
-                <p className="spot-card-desc">Multi-tonal. Dual mirrors. Top seller in showrooms.</p>
-              </div>
-            </div>
-            <div className="spot-card" role="listitem" tabIndex={0}>
-              <div className="spot-card-img" role="img" aria-label="Rich and Premium dressing table style" style={{ "background": "url('images/spotlight_4.jpg') center/cover no-repeat" }}>
-              </div>
-              <div className="spot-card-body">
-                <span className="spot-card-tag">Style 04</span>
-                <h4 className="spot-card-title">Rich &amp; Premium</h4>
-                <p className="spot-card-desc">Gold accents. Tufted seating. Our flagship collection.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/*  ================================================
      TESTIMONIALS / TRUSTED BY
@@ -534,198 +467,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/*  ================================================
-     CTA BANNER
-     ================================================  */}
-      <section id="cta-banner" aria-labelledby="cta-title">
-        <div className="container">
-          <div className="cta-banner-inner">
-            <div className="gold-ornament" aria-hidden="true"><Crown width="20" height="20" /></div>
-            <span className="cta-script">Your Space,</span>
-            <h2 className="cta-title" id="cta-title">Our <span>Priority</span></h2>
-            <p className="cta-sub">
-              10 rooms or 1,000 same quality, same commitment. Get your quote in 24 hours.
-            </p>
-
-          </div>
-        </div>
-      </section>
-
-      {/*  ================================================
-     CONTACT SECTION
-     ================================================  */}
-      <section id="contact" aria-labelledby="contact-title">
-        <div className="container">
-          <div style={{ "textAlign": "center", "marginBottom": "60px" }}>
-            <div className="section-label">Get In Touch</div>
-            <h2 className="section-title" id="contact-title">Let's <span className="gold">Work Together</span></h2>
-
-            <p className="section-sub" style={{ "textAlign": "center", "margin": "16px auto 0" }}>
-              Share your requirement we respond within 24 hours.
-            </p>
-          </div>
-
-          <div className="contact-grid">
-
-            {/*  Contact Form  */}
-            <ContactForm />
-
-            {/*  Contact Info  */}
-            <div className="contact-info">
-              <h3 className="contact-info-title">Contact Details</h3>
-
-              <div className="contact-item">
-                <div className="contact-item-icon" aria-hidden="true"><Phone width="20" height="20" /></div>
-                <div>
-                  <span className="contact-item-label">Phone</span>
-                  <div className="contact-item-value">
-                    <a href="tel:+919842025243">+91 98420 25243</a><br />
-                    <a href="tel:+917305010542">+91 73050 10542</a><br />
-                    <a href="tel:+917305010545">+91 73050 10545</a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="contact-item">
-                <div className="contact-item-icon" aria-hidden="true"><MapPin width="20" height="20" /></div>
-                <div>
-                  <span className="contact-item-label">Factory Address</span>
-                  <div className="contact-item-value">
-                    Plot No: P-33, Door No: 120/2,<br />
-                    Salem Industrial Co-operative Estate Ltd,<br />
-                    Salem–Ulundurpettai Highway,<br />
-                    PO Adhikaripatty, Udayapatti,<br />
-                    Salem, Tamil Nadu – 636014
-                  </div>
-                </div>
-              </div>
-
-
-              {/*  Google Map Embed  */}
-              <div className="map-wrap">
-                <iframe
-                  src="https://www.google.com/maps?q=Plot+No:+P-33,+Door+No:+120/2,+Salem+Industrial+Co-operative+Estate,+Salem-Ulundurpettai+Highway,+Udayapatti,+Salem,+TN+-+636014&amp;output=embed"
-                  loading="lazy"
-                  title="GRACE™ Furniture factory location in Salem, Tamil Nadu"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  aria-label="Map showing GRACE™ factory location at Salem Industrial Estate, Tamil Nadu"></iframe>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </section>
 
       {/*  ================================================
      FOOTER
      ================================================  */}
-      <footer id="footer" role="contentinfo">
-        <div className="container">
-          <div className="footer-grid">
-
-            {/*  Brand  */}
-            <div className="footer-brand">
-              <div className="footer-logo">
-                <img src="images/logo.png" alt="GRACE Logo" className="logo-img" />
-              </div>
-              <p>Factory-direct furniture from Salem, TN. Hotels, showrooms, designers &amp; corporates supplied pan-India.</p>
-              <div className="footer-socials" role="list" aria-label="Social media links">
-                <a href="https://www.facebook.com/profile.php?id=61594065782162" className="social-btn" role="listitem" aria-label="Follow GRACE™ on Facebook" target="_blank" rel="noopener">f</a>
-                <a href="https://www.instagram.com/grace_furnituresalem/" className="social-btn" role="listitem" aria-label="Follow GRACE™ on Instagram" target="_blank" rel="noopener">in</a>
-                <a href="https://wa.me/919842025243" className="social-btn" role="listitem" aria-label="Chat with GRACE™ on WhatsApp" style={{ "fontSize": "0.75rem" }} target="_blank" rel="noopener">WA</a>
-              </div>
-            </div>
-
-            {/*  Quick Links  */}
-            <nav className="footer-col" aria-label="Quick links">
-              <h4>Quick Links</h4>
-              <ul className="footer-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#categories">Products</a></li>
-                <li><a href="#business">B2B Solutions</a></li>
-                <li><a href="#spotlight">Gallery</a></li>
-                <li><a href="#usp">Why Choose Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
-
-            {/*  Product Categories  */}
-            <nav className="footer-col" aria-label="Product categories">
-              <h4>Products</h4>
-              <ul className="footer-links">
-                <li><a href="#categories">Wardrobes &amp; Storage</a></li>
-                <li><a href="#categories">Bookshelves &amp; Cabinets</a></li>
-                <li><a href="#categories">Office Furniture</a></li>
-                <li><a href="#categories">Bedroom Furniture</a></li>
-                <li><a href="#categories">Dining Furniture</a></li>
-                <li><a href="#categories">Sofa Sets</a></li>
-                <li><a href="#categories">Dressing Tables</a></li>
-                <li><a href="#contact">Custom Orders</a></li>
-              </ul>
-            </nav>
-
-            {/*  Contact  */}
-            <div className="footer-col">
-              <h4>Contact Us</h4>
-              <div className="footer-contact-item">
-                <span className="footer-contact-icon" aria-hidden="true"><Phone width="14" height="14" /></span>
-                <div className="footer-contact-text">
-                  <a href="tel:+919842025243">+91 98420 25243</a><br />
-                  <a href="tel:+917305010542">+91 73050 10542</a><br />
-                  <a href="tel:+917305010545">+91 73050 10545</a>
-                </div>
-              </div>
-              <div className="footer-contact-item">
-                <span className="footer-contact-icon" aria-hidden="true"><MapPin width="14" height="14" /></span>
-                <div className="footer-contact-text">
-                  Plot No: P-33, Door No: 120/2,<br />
-                  Salem Industrial Co-operative Estate,<br />
-                  Salem–Ulundurpettai Highway,<br />
-                  Udayapatti, Salem, TN – 636014
-                </div>
-              </div>
-              <div className="footer-contact-item">
-                <span className="footer-contact-icon" aria-hidden="true"><Clock width="14" height="14" /></span>
-                <div className="footer-contact-text">
-                  Mon–Fri: 9:00 AM – 6:30 PM<br />
-                  Saturday: 9:00 AM – 5:00 PM<br />
-                  Sunday: Closed
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        {/*  Footer Bottom  */}
-        <div style={{ "borderTop": "1px solid rgba(255,255,255,0.07)" }}>
-          <div className="container footer-bottom">
-            <p className="footer-copy">
-              © 2026 <span>GRACE™ Furniture</span>. All Rights Reserved. Crafted with excellence in Salem, Tamil Nadu.
-            </p>
-            <nav className="footer-legal" aria-label="Legal links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms &amp; Conditions</a>
-              <a href="#">Sitemap</a>
-            </nav>
-          </div>
-        </div>
-
-        {/*  Powered By  */}
-        <div style={{ "borderTop": "1px solid rgba(255,255,255,0.04)", "textAlign": "center", "padding": "12px 0", "fontSize": "0.72rem", "color": "rgba(255,255,255,0.35)" }}>
-          Powered by{' '}
-          <a
-            href="https://genaitechnology.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="powered-by-link"
-          >
-            Gen-AI Tech | IT Solutions Salem
-          </a>
-        </div>
-      </footer>
+      <Footer />
 
 
       {/*  ── Show desktop CTA after scroll ──  */}

@@ -1,8 +1,12 @@
 'use client';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Home, Factory, Sofa, Handshake, Image as ImageIcon, Star, Phone, X } from 'lucide-react';
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const isGallery = Boolean(pathname && (pathname === '/gallery' || pathname.startsWith('/gallery')));
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -43,21 +47,30 @@ export default function Navbar() {
     window.scrollTo(0, scrollY);
   };
 
+  const getHref = (hash: string) => {
+    if (isGallery) {
+      if (hash === '#contact') return '#contact';
+      return `/${hash}`;
+    }
+    if (hash === '#contact') return '/gallery#contact';
+    return hash;
+  };
+
   return (
     <>
-      <header id="navbar" role="banner" className={scrolled ? 'scrolled' : ''}>
+      <header id="navbar" role="banner" className={`${scrolled ? 'scrolled' : ''} ${isGallery ? 'nav-solid scrolled' : ''}`.trim()}>
         <div className="container nav-inner">
-          <a href="#hero" className="nav-logo" aria-label="GRACET Furniture - Home">
-            <img src="images/logo.png" alt="GRACE Logo" className="logo-img" />
-          </a>
+          <Link href="/" className="nav-logo" aria-label="GRACE Furniture - Home">
+            <img src="/images/logo.png" alt="GRACE Logo" className="logo-img" />
+          </Link>
 
           <nav className="nav-links" role="navigation" aria-label="Primary navigation">
-            <a href="#hero">Home</a>
-            <a href="#about">About</a>
-            <a href="#categories">Products</a>
-            <a href="#business">B2B Solutions</a>
-            <a href="#spotlight">Gallery</a>
-            <a href="#contact">Contact</a>
+            <a href={isGallery ? '/' : '#hero'}>Home</a>
+            <a href={getHref('#about')}>About</a>
+            <a href={getHref('#categories')}>Products</a>
+            <a href={getHref('#business')}>B2B Solutions</a>
+            <Link href={isGallery ? '#spotlight' : '/gallery'} className={isGallery ? 'active' : ''}>Gallery</Link>
+            <a href={getHref('#contact')}>Contact</a>
           </nav>
 
           <button 
@@ -79,13 +92,13 @@ export default function Navbar() {
           <X width="28" height="28" />
         </button>
         <div className="drawer-links">
-          <a href="#hero" onClick={closeMenu}><Home width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> Home</a>
-          <a href="#about" onClick={closeMenu}><Factory width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> About Us</a>
-          <a href="#categories" onClick={closeMenu}><Sofa width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> Products</a>
-          <a href="#business" onClick={closeMenu}><Handshake width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> B2B Solutions</a>
-          <a href="#spotlight" onClick={closeMenu}><ImageIcon width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> Gallery</a>
-          <a href="#usp" onClick={closeMenu}><Star width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> Why Choose Us</a>
-          <a href="#contact" onClick={closeMenu}><Phone width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> Contact</a>
+          <a href={isGallery ? '/' : '#hero'} onClick={closeMenu}><Home width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> Home</a>
+          <a href={getHref('#about')} onClick={closeMenu}><Factory width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> About Us</a>
+          <a href={getHref('#categories')} onClick={closeMenu}><Sofa width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> Products</a>
+          <a href={getHref('#business')} onClick={closeMenu}><Handshake width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> B2B Solutions</a>
+          <Link href={isGallery ? '#spotlight' : '/gallery'} className={isGallery ? 'active' : ''} onClick={closeMenu}><ImageIcon width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> Gallery</Link>
+          <a href={getHref('#usp')} onClick={closeMenu}><Star width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> Why Choose Us</a>
+          <a href={getHref('#contact')} onClick={closeMenu}><Phone width="18" height="18" style={{ verticalAlign: '-4px', marginRight: '6px' }} /> Contact</a>
         </div>
       </nav>
     </>
